@@ -1,5 +1,5 @@
 <?php
-use App\http\Controllers\MovieController;
+use App\http\Controllers\PageController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,6 +15,6 @@ use Illuminate\Support\Facades\Route;
 
 Route::view('/', 'home');
 
-Route::get('/movies', [MovieController::class, 'index'])->name('movies.index');
+Route::get('/movies', [PageController::class, 'index'])->name('movies.index');
 
-Route::get('/movies/{id}', [MovieController::class, 'show'])->name('movies.show');
+Route::get('/movies/{id}', [PageController::class, 'show'])->name('movies.show');
