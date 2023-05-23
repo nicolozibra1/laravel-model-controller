@@ -1,14 +1,14 @@
 @extends('layouts.app')
 
 @section('content')
+<div class="background">
     <section class="container d-flex flex-column align-items-center" id="movies-index">
         <div class="box-logo">
             <img src="/img/logo.png" alt="">
         </div>
-        <h1>Movies List</h1>
-        <div class="row d-flex">
+        <div class="row d-flex flex-wrap">
             @foreach ($movies as $movie)
-            <div class="col-3">
+            <div class="col-2">
                 <a href="{{route('movies.show', ['id' => $movie->id])}}">
                     <div class="card">
                         <div class="card-img">
@@ -23,4 +23,5 @@
             @endforeach
         </div>
     </section>
+</div>
 @endsection
