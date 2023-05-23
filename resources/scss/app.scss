@@ -9,3 +9,19 @@ $fa-font-path: "../fonts/webfonts" !default;
 @import "~@fortawesome/fontawesome-free/scss/brands";
 
 @import '~bootstrap/scss/bootstrap';
+
+body{
+    background-color: #ffc400;
+}
+.preload{
+    a{
+        background-color: black;
+        color: white;
+        font-weight: bold;
+        text-decoration: none;
+        padding: 15px 25px;
+        border-radius: 10px;
+        margin-top: 30px;
+
+    }
+}

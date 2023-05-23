@@ -1,8 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
-    <section class="container">
-        <h1>Home Page</h1>
-        <a href="{{route('movies.index')}}">Vai alla lista dei film</a>
+    <section class="preload container d-flex flex-column justify-content-center align-items-center mt-5">
+        <img src="/img/logo.png" alt="">
+        <a href="{{route('movies.index')}}">ENTER</a>
     </section>
 @endsection
